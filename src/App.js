@@ -1,5 +1,11 @@
+import Home from "./Pages/Home/Home";
+
 function App() {
-  return <div>Bharat Sharma</div>;
+  return (
+    <div>
+      <Home />
+    </div>
+  );
 }
 
 export default App;
