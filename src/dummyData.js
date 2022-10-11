@@ -2,52 +2,52 @@ export const Users = [
   {
     id: 1,
     profilePicture: "assets/person/1.jpeg",
-    username: "Safak Kocaoglu",
+    username: "Vivek Sharma",
   },
   {
     id: 2,
     profilePicture: "assets/person/2.jpeg",
-    username: "Janell Shrum",
+    username: "Shubham Sharma",
   },
   {
     id: 3,
     profilePicture: "assets/person/3.jpeg",
-    username: "Alex Durden",
+    username: "Aditya Gupta",
   },
   {
     id: 4,
     profilePicture: "assets/person/4.jpeg",
-    username: "Dora Hawks",
+    username: "Aditya Naroliya",
   },
   {
     id: 5,
     profilePicture: "assets/person/5.jpeg",
-    username: "Thomas Holden",
+    username: "Prasuk Jain",
   },
   {
     id: 6,
     profilePicture: "assets/person/6.jpeg",
-    username: "Shirley Beauchamp",
+    username: "Garvit Agarwal",
   },
   {
     id: 7,
     profilePicture: "assets/person/7.jpeg",
-    username: "Travis Bennett",
+    username: "Himanshu Singh",
   },
   {
     id: 8,
     profilePicture: "assets/person/8.jpeg",
-    username: "Kristen Thomas",
+    username: "Satyam Sharma",
   },
   {
     id: 9,
     profilePicture: "assets/person/9.jpeg",
-    username: "Gary Duty",
+    username: "Samar Jain",
   },
   {
     id: 10,
     profilePicture: "assets/person/10.jpeg",
-    username: "Safak Kocaoglu",
+    username: "Atul Upadhyay",
   },
 ];
 
