@@ -1,4 +1,4 @@
-import { createContext, useEffect, useReducer } from "react";
+import { createContext, useEffect, useReducer, Provider } from "react";
 import AuthReducer from "./AuthReducer";
 
 const INITIAL_STATE = {
@@ -17,7 +17,7 @@ export const AuthContextProvider = ({ children }) => {
   }, [state.user]);
 
   return (
-    <Provider
+    <AuthContext.Provider
       value={{
         user: state.user,
         isFetching: state.isFetching,
@@ -26,6 +26,6 @@ export const AuthContextProvider = ({ children }) => {
       }}
     >
       {children}
-    </Provider>
+    </AuthContext.Provider>
   );
 };
