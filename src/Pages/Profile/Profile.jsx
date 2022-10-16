@@ -1,12 +1,24 @@
-import React from 'react'
-import './profile.css'
+import "./profile.css";
 import Topbar from "../../Components/Topbar/Topbar";
 import Sidebar from "../../Components/Sidebar/Sidebar";
 import Feed from "../../Components/Feed/Feed";
 import Rightbar from "../../Components/Rightbar/Rightbar";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import { useParams } from "react-router";
 
-const Profile = () => {
-    const publicFolder = process.env.REACT_APP_PUBLIC_FOLDER
+export default function Profile() {
+    const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+    const [user, setUser] = useState({});
+    const username = useParams().username;
+
+    useEffect(() => {
+        const fetchUser = async () => {
+            const res = await axios.get(`/users?username=${username}`);
+            setUser(res.data);
+        };
+        fetchUser();
+    }, [username]);
 
     return (
         <>
@@ -18,28 +30,34 @@ const Profile = () => {
                         <div className="profileCover">
                             <img
                                 className="profileCoverImg"
-                                src={`${publicFolder}post/3.jpeg`}
+                                src={
+                                    user.coverPicture
+                                        ? PF + user.coverPicture
+                                        : PF + "person/noCover.png"
+                                }
                                 alt=""
                             />
                             <img
                                 className="profileUserImg"
-                                src={`${publicFolder}person/7.jpeg`}
+                                src={
+                                    user.profilePicture
+                                        ? PF + user.profilePicture
+                                        : PF + "person/noAvatar.png"
+                                }
                                 alt=""
                             />
                         </div>
                         <div className="profileInfo">
-                            <h4 className="profileInfoName">Vivek Sharma</h4>
-                            <span className="profileInfoDesc">Hello my friends!</span>
+                            <h4 className="profileInfoName">{user.username}</h4>
+                            <span className="profileInfoDesc">{user.desc}</span>
                         </div>
                     </div>
                     <div className="profileRightBottom">
-                        <Feed />
-                        <Rightbar profile />
+                        <Feed username={username} />
+                        <Rightbar user={user} />
                     </div>
                 </div>
             </div>
         </>
-    )
+    );
 }
-
-export default Profile
