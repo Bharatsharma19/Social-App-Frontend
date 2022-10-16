@@ -2,7 +2,7 @@ import { useContext, useRef } from "react";
 import "./login.css";
 import { loginCall } from "../../apiCalls";
 import { AuthContext } from "../../context/AuthContext";
-import { CircularProgress } from "@mui/material";
+import CircularProgress from '@mui/material/CircularProgress'
 import { useNavigate } from "react-router-dom";
 
 export default function Login() {
