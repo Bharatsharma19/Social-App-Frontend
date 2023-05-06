@@ -2,52 +2,52 @@ export const Users = [
   {
     id: 1,
     profilePicture: "person/1.jpeg",
-    username: "Vivek Sharma",
+    username: "Aditya Naroliya",
   },
   {
     id: 2,
     profilePicture: "person/2.jpeg",
-    username: "Shubham Sharma",
+    username: "Himanshu Singh",
   },
   {
     id: 3,
     profilePicture: "person/3.jpeg",
-    username: "Aditya Gupta",
+    username: "Prasuk Jain",
   },
   {
     id: 4,
     profilePicture: "person/4.jpeg",
-    username: "Aditya Naroliya",
+    username: "Aditya Gupta",
   },
   {
     id: 5,
     profilePicture: "person/5.jpeg",
-    username: "Prasuk Jain",
+    username: "Aman Sharma",
   },
   {
     id: 6,
     profilePicture: "person/6.jpeg",
-    username: "Garvit Agarwal",
+    username: "Simran Parmar",
   },
   {
     id: 7,
     profilePicture: "person/7.jpeg",
-    username: "Himanshu Singh",
+    username: "Atul Sharma",
   },
   {
     id: 8,
     profilePicture: "person/8.jpeg",
-    username: "Satyam Sharma",
+    username: "Raj Singh",
   },
   {
     id: 9,
     profilePicture: "person/9.jpeg",
-    username: "Samar Jain",
+    username: "Hemant Rajput",
   },
   {
     id: 10,
     profilePicture: "person/10.jpeg",
-    username: "Atul Upadhyay",
+    username: "Shashank Pathak",
   },
 ];
 
